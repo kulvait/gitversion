@@ -1,4 +1,13 @@
 # git-version [![Build Status](https://travis-ci.org/smessmer/gitversion.svg?branch=master)](https://travis-ci.org/smessmer/gitversion)
+
+## Reason for fork
+There is a problem when the package generates new gitversion/version.h it triggers a recompilation of the whole project.
+It does the same if the new version of gitversion/version.h is the same as the old version with new timestamp.
+Fixing this, fix was not yet accepted and 
+
+I would like to use it as a submodule of https://bitbucket.org/kulvait/cbct
+
+## Original description continue
 Make git version information (e.g. git tag name, git commit id, ...) available to your source files.
 A simple use case scenario is to output this version information when the application is called with "--version".
 
